@@ -11,13 +11,13 @@ Asegúrate de tener Docker instalado en tu sistema antes de comenzar. Puedes des
 1. Clona este repositorio en tu máquina local:
 
     ```bash
-    git clone https://github.com/tu-usuario/tu-repositorio.git
+    git clone https://github.com/SedielRuiz/socket-server.git
     ```
 
 2. Navega al directorio del proyecto:
 
     ```bash
-    cd tu-repositorio
+    cd socket-server
     ```
 
 3. Ejecuta el siguiente comando para construir la imagen Docker y levantar los contenedores:
