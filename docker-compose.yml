@@ -1,0 +1,33 @@
+version: '1'
+services:
+  server-socket:
+    image: image-socket:latest
+    ports:
+      - 8014:8014    
+    volumes:
+      - .:/home/app
+    links:
+      - socket-server-mysql
+
+  socket-server-mysql:
+    image: mysql:8.3
+    ports:
+      - 3307:3306
+    environment:
+      - MYSQL_ROOT_PASSWORD=123456899
+      - MYSQL_DATABASE=socket_server
+      - MYSQL_USER=sediel
+      - MYSQL_PASSWORD=12345689
+    volumes:
+      - mysql-socket:/mysql:/var/lib/mysql
+      - ./db.sql:/docker-entrypoint-initdb.d/db.sql
+
+  socket-client:
+    image: image-socket:latest
+    ports:
+      - 8015:8015
+    links: 
+      - server-socket
+
+volumes:
+  mysql-socket:
