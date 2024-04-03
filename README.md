@@ -1,12 +1,12 @@
-# Proyecto de Socket con Docker
+#Proyecto de Socket con Docker
 
 Este proyecto es una implementación básica de un servidor y un cliente socket utilizando Docker para la gestión de los contenedores.
 
-## Requisitos previos
+##Requisitos previos
 
 Asegúrate de tener Docker instalado en tu sistema antes de comenzar. Puedes descargar Docker desde [este enlace](https://www.docker.com/get-started).
 
-## Instrucciones de Uso
+##Instrucciones de Uso
 
 1. Clona este repositorio en tu máquina local:
 
